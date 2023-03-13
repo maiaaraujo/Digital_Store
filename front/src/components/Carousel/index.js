@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import companyLogo from "./img/sneakers.png";
+import companyLogo from "./img/sneakers2.png";
 import ornament from "./img/ornament.svg";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -24,7 +24,7 @@ export default function Carousel() {
           className="mySwiper"
         >
           <SwiperSlide>
-               <section className="d-flex justify-content-evenly align-items-center">
+               <section className="d-flex justify-content-between">
                     <div className="text-start justify-content-end p-5">
                          <p className="fs-6 textoAmarelo">Melhores ofertas personalizadas</p>
                          <h1><strong>Queima de <br/>Estoque Nike</strong></h1>
