@@ -18,15 +18,19 @@ export default function Home () {
         <ColecoesDestaque/>
     <Container>
     <Grid container spacing={3}>
+        
         <Grid item md={3}>
           <Produto/>
         </Grid>
+        
         <Grid item md={3}>
           <Produto/>
         </Grid>
+       
         <Grid item md={3}>
           <Produto/>
         </Grid>
+        
         <Grid item md={3}>
           <Produto/>
         </Grid>

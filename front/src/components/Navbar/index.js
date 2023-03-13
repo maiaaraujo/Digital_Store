@@ -1,6 +1,7 @@
 import {Button, TextField} from "@mui/material";
 import {ShoppingCart} from "@mui/icons-material";
-import "./styles.css";
+import { pink } from "@mui/material/colors";
+import "./styles.css"
 
 export default function Navbar() {
     return(
@@ -11,7 +12,7 @@ export default function Navbar() {
 
             <TextField label="O que você procura"/>
             
-            <Button color="secondary" variant="contained">Entrar</Button>
+            <Button sx={{backgroundColor: pink['A200'],color:"white"}}>Entrar</Button>
             <ShoppingCart className="carrinho"/>
            
         </div>
