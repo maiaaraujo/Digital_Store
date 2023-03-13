@@ -4,24 +4,32 @@ import Navbar from "../../components/Navbar";
 import Carousel from "../../components/Carousel";
 import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
-import { Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 
 
 export default function Home () {
     return (
-      <div>
+  <div>
         <Navbar/>
         <Menu/> 
         Página de Home 
         <Carousel/>
         <ColecoesDestaque/>
-        <Stack spacing={2} direction='row'>
-        <Produto/>
-        <Produto/>
-        <Produto/>
-        <Produto/>
-        </Stack>
-      </div>    
+    <Grid container>
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+    </Grid>
+ </div>    
             
         
     )
