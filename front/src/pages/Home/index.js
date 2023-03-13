@@ -5,6 +5,7 @@ import Carousel from "../../components/Carousel";
 import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
 import { Grid } from "@mui/material";
+import { Container } from "@mui/material";
 
 
 export default function Home () {
@@ -15,7 +16,8 @@ export default function Home () {
         Página de Home 
         <Carousel/>
         <ColecoesDestaque/>
-    <Grid container>
+    <Container>
+    <Grid container spacing={3}>
         <Grid item md={3}>
           <Produto/>
         </Grid>
@@ -29,6 +31,7 @@ export default function Home () {
           <Produto/>
         </Grid>
     </Grid>
+    </Container>
  </div>    
             
         
