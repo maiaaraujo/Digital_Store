@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Carousel from "./components/Carousel";
+import Colecoes from "./components/Colecoes";
 import Menu from "./components/Menu";
 import Navbar from "./components/Navbar";
 import Categorias from "./pages/Categorias";
@@ -27,6 +28,7 @@ export default function App() {
       </BrowserRouter>
 
       <Carousel/>
+      <Colecoes/>
     </>
   );
 }

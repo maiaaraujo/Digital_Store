@@ -1,0 +1,50 @@
+.mgtColecoes {
+    margin-top: 80px;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.col1 {
+    align-items: center;
+    position: relative;
+    width: 28%;
+    height: 230px;
+    background: #D8E3F2;
+    border-radius: 8px;
+}
+
+
+
+.OFF {
+    padding: 10px;
+    vertical-align: middle;
+    width: 90px;
+    background: #E7FF86;
+    border-radius: 29px; 
+}
+
+.imgGeral {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+}
+
+.ajusteTexto {
+    margin: 20px;
+}
+
+.buttonbranco {
+    position: absolute !important;  
+    background: #ffffff;
+    color: #c92071;
+    border-radius: 5px;
+    padding: 10px 33px;
+    align-items: center;
+    border: none;
+    box-shadow: inset;
+}
+
+
