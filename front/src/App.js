@@ -14,8 +14,7 @@ export default function App() {
   return(
     <div>
       <BrowserRouter>
-         <Navbar/>
-         <Menu/>
+        
          
          <Routes>
            <Route path="/" element= {<Home/>} />
