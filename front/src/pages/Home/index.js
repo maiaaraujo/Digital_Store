@@ -12,7 +12,7 @@ export default function Home () {
     return (
   <div>
         <Navbar/>
-        <Menu/> 
+        <Menu className="menu"/> 
         Página de Home 
         <Carousel/>
         <ColecoesDestaque/>
