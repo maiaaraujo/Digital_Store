@@ -10,6 +10,9 @@ import Footer from "../../components/Footer";
 
 
 export default function Home () {
+    
+    const [listaProdutos, setListaProdutos] = React.useState ([]);
+
     return (
       <div>
         <Navbar/>
@@ -22,10 +25,15 @@ export default function Home () {
     
     <Container>
     <Grid container spacing={3}>
+        {
+          listaProdutos.map((produto) => { 
+              <Grid item md={3}>
+                <Produto/>
+              </Grid>
+          })
+        }
+
         
-        <Grid item md={3}>
-          <Produto/>
-        </Grid>
         
         <Grid item md={3}>
           <Produto/>
