@@ -4,8 +4,6 @@ import Produtos from "./pages/Produtos";
 import Categorias from "./pages/Categorias";
 import Home from "./pages/Home";
 import MeusPedidos from "./pages/MeusPedidos";
-import Navbar from "./components/Navbar";
-import Menu from "./components/Menu";
 
 import "./index.css";
 

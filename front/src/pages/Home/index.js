@@ -10,12 +10,15 @@ import { Container } from "@mui/material";
 
 export default function Home () {
     return (
-  <div>
+      <div>
         <Navbar/>
-        <Menu className="menu"/> 
-        Página de Home 
+        <Menu/> 
+          Página de Home 
+        
         <Carousel/>
+        
         <ColecoesDestaque/>
+    
     <Container>
     <Grid container spacing={3}>
         

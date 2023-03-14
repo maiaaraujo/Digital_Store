@@ -1,7 +1,8 @@
 import Menu from "../../components/Menu";
 import {Card, Button, Grid} from "@mui/material";
 import React from "react";
-//import {useState} from "react";
+
+import "./styles.css";
 
 function CadaProduto (props) {
     const [quantidade, alterarQuantidade] = React.useState(1);
@@ -17,12 +18,12 @@ function CadaProduto (props) {
         alterarQuantidade(quantidade - 1);
     }
     return (
-        <Card>
+        <Card style={{width: '100%', padding: '10px'}}>
         {props.produto} (R$ {props.valor})
 
-        <Button disabled={quantidade <= 1} onClick={remove}>-</Button>
+        <Button  disabled={quantidade <= 1} onClick={remove}>-</Button>
          {quantidade}
-        <Button onClick={add}>+</Button>
+        <Button className="x" onClick={add}>+</Button>
 
         <hr/>
 

@@ -1,47 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tilt+Neon&family=VT323&display=swap');
 
+.navbar {
+    left: 10%;
+}
+
 .logo {
-    position: absolute;
-    left: 5.4%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    /* position: absolute; */
+    margin-left: 13px;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36.3951px;
-    line-height: 44px;
-    letter-spacing: -0.01em;
     color: #C92071;  
 }
 
 .carrinho {
+    width: 100%;
     color: #C92071;
+    margin-left: 700px;
+    margin-top: 20px;
 }
 
 .Vector {
-    position: absolute;
-    left: 3%;
-    right: 4.5%;
-    top: 3.8%;
-    bottom: -61.36%;
+    margin-left: 10px;
+    margin-top: 27px;
 }
 
 .input {
-    position: absolute;
-    width: 559px;
-    height: 60px;
-    left: 384px;
-    top: 34px;
+    left: 20%;
+    width: 300%;
+    top: 20%;
 }
 
 .botao {
-    position: absolute;
-    width: 150px;
-    height: 50px;
-    padding: 20%;
-    left: 30%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
+    width: 100px;
+    padding: 100%;
+    left: 690%;
+    top: 20%;
 }

@@ -2,7 +2,7 @@ import {Link, useLocation} from "react-router-dom";
 
 
 
-import "./style.css";
+import "./styles.css";
 
 export default function Menu() {
     const location = useLocation();
