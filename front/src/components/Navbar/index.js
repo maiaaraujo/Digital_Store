@@ -21,6 +21,10 @@ export default function Navbar() {
                 </Grid>
                 
                 <Grid item>
+                   <Button className="botao1">Cadastre-se</Button>
+                </Grid>
+
+                <Grid item>
                    <Button className="botao" sx={{backgroundColor: 
                    pink['A200'],color:"white"}}>Entrar</Button>
                 </Grid>
