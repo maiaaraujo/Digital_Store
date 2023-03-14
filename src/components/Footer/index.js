@@ -40,8 +40,7 @@ export default function Footer() {
         </div>
 
         <div className='footer-container-item1'>
-            <h3>Categorias</h3>
-            
+        <p className='footer-item1'><strong>Informações</strong></p>
             <li>
                 <a href='#' className='footer-link'>Camisetas</a>
             </li>
@@ -60,13 +59,14 @@ export default function Footer() {
         </div>
 
         <div className='footer-container-item2'>
-            <h3>Contato</h3>
-            <p>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
-            <p>(85) 3051-3411</p>
+        <p className='footer-item1'><strong>Contato</strong></p>
+            <p className='footer-item1'>Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - CE, 60150-161</p>
+            <p className='footer-item1'>(85) 3051-3411</p>
         </div>
 
-        <hr></hr>
+        
         <div className='footer-container-item3'>
+            <hr />
             @ 2022 Digital College
         </div>            
     </div>
