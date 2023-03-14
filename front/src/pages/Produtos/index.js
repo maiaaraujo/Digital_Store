@@ -3,7 +3,7 @@ import {Card, Button} from "@mui/material";
 import React from "react";
 //import {useState} from "react";
 
-export default function Produtos () {
+function CadaProduto () {
     const [quantidade, alterarQuantidade] = React.useState(1);
 
     const add = () => { 
@@ -16,6 +16,23 @@ export default function Produtos () {
         }
         alterarQuantidade(quantidade - 1);
     }
+    return (
+        <Card>
+        Pizza de cogumelos ( R$ 29 )
+
+        <Button disabled={quantidade <= 1} onClick={remove}>-</Button>
+         {quantidade}
+        <Button onClick={add}>+</Button>
+
+        <hr/>
+
+        TOTAL: R$ {29 * quantidade}
+        </Card>
+    )
+}
+
+export default function Produtos () {
+    
 
     return (
         <div>
@@ -23,18 +40,11 @@ export default function Produtos () {
             Página de Produtos
 
             <hr/>
+        
+        <CadaProduto/>
 
-            <Card>
-                Pizza de cogumelos ( R$ 29 )
-
-                <Button onClick={remove}>-</Button>
-                 {quantidade}
-                <Button onClick={add}>+</Button>
-
-                <hr/>
-
-                TOTAL: R$ {29 * quantidade}
-            </Card>
+        <CadaProduto/>
+           
         </div>
 
 
