@@ -6,6 +6,7 @@ import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
+import Footer from "../../components/Footer";
 
 
 export default function Home () {
@@ -39,6 +40,8 @@ export default function Home () {
         </Grid>
     </Grid>
     </Container>
+    
+    <Footer/>
  </div>    
             
         
