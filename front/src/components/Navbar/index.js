@@ -1,8 +1,8 @@
-import {Button, Grid, TextField} from "@mui/material";
-import {ShoppingCart} from "@mui/icons-material";
+import {Button, Grid, TextField,} from "@mui/material";
 import { pink } from "@mui/material/colors";
 import "./styles.css"
 import Vector from "./Vector.png";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 export default function Navbar() {
     return(
@@ -17,11 +17,11 @@ export default function Navbar() {
                 </Grid>
                
                 <Grid item>
-                     <TextField className="input" label="Pesquisar produto..."/>
+                   <TextField className="input" label="Pesquisar produto..." variant="filled" />
                 </Grid>
                 
                 <Grid item>
-                   <Button className="botao1">Cadastre-se</Button>
+                <Button className="botao1" variant="text">Cadastre-se</Button>
                 </Grid>
 
                 <Grid item>
@@ -30,7 +30,7 @@ export default function Navbar() {
                 </Grid>
 
                 <Grid item>
-                   <ShoppingCart className="carrinho"/>
+                    <ShoppingCartOutlinedIcon className="carrinho"/>
                 </Grid>
           </Grid>
         </div>

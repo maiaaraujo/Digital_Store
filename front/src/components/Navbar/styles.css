@@ -12,11 +12,11 @@
 }
 
 .carrinho {
-    width: 75px;
-    height: 75px;
+    width: 45px;
+    height: 45px;
     color: #C92071;
     margin-left: 730px;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .Vector {
@@ -28,6 +28,7 @@
     left: 20%;
     width: 300%;
     top: 20%;
+    color: #edede9;
 }
 
 .botao {
