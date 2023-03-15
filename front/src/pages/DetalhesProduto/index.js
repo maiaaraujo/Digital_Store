@@ -38,10 +38,18 @@ export default function DetalhesProduto() {
         });
     }
 
-    function anterior(){}
+    function anterior(){
+        if(atual === 0){
+            setAtual(imagens.length - 1);
+        }else{
+            setAtual(atual - 1);
+        }
+    }
     function proximo(){
-        if(atual < imagens.length){
+        if(atual < imagens.length - 1){
             setAtual(atual + 1);
+        }else{
+            setAtual(0)
         }
     }
       
@@ -57,7 +65,7 @@ export default function DetalhesProduto() {
                         justifyContent: "space-between",
                         alignItems: "center"
                   }}> 
-                        <ChevronLeft sx={{fontSize:"60px"}}/>
+                        <ChevronLeft sx={{fontSize:"60px"}} onClick={() => anterior()}/>
                         <img width="400px" src={imagens[atual]}/>
                         <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
                     </Stack>
