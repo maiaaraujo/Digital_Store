@@ -1,8 +1,9 @@
 import {Button, Grid, TextField,} from "@mui/material";
 import { pink } from "@mui/material/colors";
-import "./styles.css"
 import Vector from "./Vector.png";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+
+import "./styles.css";
 
 export default function Navbar() {
     return(

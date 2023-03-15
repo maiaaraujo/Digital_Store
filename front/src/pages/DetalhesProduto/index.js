@@ -1,12 +1,14 @@
 import { useParams } from "react-router-dom";
-import { Card, Grid } from "@mui/material";
+import { Card, Grid, Stack, } from "@mui/material";
 import adidas from "./img/adidas.png";
 import air from "./img/air.png";
 import Sneakers from "./img/Sneakers.png";
 import nike from "./img/nike.jpg";
 import nike1 from "./img/nike1.jpg";
 
+
 import React from "react";
+import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 export default function DetalhesProduto() {
     const {id} = useParams();
@@ -36,6 +38,14 @@ export default function DetalhesProduto() {
         });
     }
 
+    function anterior(){}
+    function proximo(){
+        if(atual < imagens.length){
+            setAtual(atual + 1);
+        }
+    }
+      
+    
     return (
         <div>
             Detalhes do Produto {id}
@@ -43,7 +53,15 @@ export default function DetalhesProduto() {
             <Grid container spacing={3}>
                 <Grid item xs={7}>
                  <Card align="center">
-                    <img width="400px" src={imagens[atual]}/>
+                    <Stack direction="row" sx={{
+                        justifyContent: "space-between",
+                        alignItems: "center"
+                  }}> 
+                        <ChevronLeft sx={{fontSize:"60px"}}/>
+                        <img width="400px" src={imagens[atual]}/>
+                        <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
+                    </Stack>
+                   
                  </Card>
 
 
