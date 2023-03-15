@@ -29,7 +29,8 @@ export default function DetalhesProduto() {
             return (
                 
                     <Grid item xs={2.4}>
-                        <Card onClick={() => setAtual(posicao)}>
+                        <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && { 
+                              border: "2px solid red"}}>
                             <img src={cada} width="100%"/>
                         </Card>
                     </Grid>
