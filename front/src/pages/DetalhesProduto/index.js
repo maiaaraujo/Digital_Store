@@ -7,7 +7,7 @@ import nike from "./img/nike.jpg";
 import nike1 from "./img/nike1.jpg";
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 export default function DetalhesProduto() {
@@ -53,7 +53,13 @@ export default function DetalhesProduto() {
             setAtual(0)
         }
     }
-      
+
+    React.useEffect(() => {
+          let intervalo = setInterval(proximo, 3000);
+
+          return () => clearInterval(intervalo);
+
+      });
     
     return (
         <div>
