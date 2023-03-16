@@ -1,10 +1,11 @@
-import {Button, Grid, TextField,} from "@mui/material";
+import {Button, Grid, InputAdornment, TextField,} from "@mui/material";
+import SearchIcon from '@mui/icons-material/Search';
 import { pink } from "@mui/material/colors";
 import Vector from "./Vector.png";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-
 import "./styles.css";
+
 export default function Navbar() {
     return(
         <div className="navbar">
@@ -18,7 +19,14 @@ export default function Navbar() {
                 </Grid>
                
                 <Grid item>
-                   <TextField className="input" label="Pesquisar produto..." variant="filled" />
+                <TextField className="input" color="secondary"
+                InputProps={{
+                endAdornment: <InputAdornment position="end"><SearchIcon/></InputAdornment>,}} 
+                        sx={{
+                            width: 560,
+                            marginLeft: 3,
+                        }}
+                        label="Pesquisar produto..."/>
                 </Grid>
                 
                 <Grid item>

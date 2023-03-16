@@ -13,11 +13,11 @@
     color: #C92071;  
 }
 
-.carrinho {
+.navbar .carrinho {
     width: 45px;
     height: 45px;
     color: #C92071;
-    margin-left: 730px;
+    margin-left: 400px;
     margin-top: 20px;
 }
 
@@ -28,24 +28,24 @@
 
 .input {
     left: 20%;
-    width: 300%;
+    width: 200%;
     top: 20%;
     color: #edede9;
 }
 
-.botao {
+.navbar .botao {
     background-color: #C92071;
     color: #edede9;
     width: 150px;
     height: 50px;
-    left: 450%;
+    left: 250%;
     top: 20%;
 }
 
-.botao1 {
+.navbar .botao1 {
     width: 150px;
     height: 50px;
-    left: 400%;
+    left: 200%;
     top: 20%;
     color: #474747;
 }
