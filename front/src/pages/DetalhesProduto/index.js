@@ -10,6 +10,8 @@ import nike1 from "./img/nike1.jpg";
 import React, { useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
+import "./styles.scss";
+
 export default function DetalhesProduto() {
     const {id} = useParams();
     const [atual, setAtual] = React.useState(0);
@@ -58,11 +60,10 @@ export default function DetalhesProduto() {
           let intervalo = setInterval(proximo, 3000);
 
           return () => clearInterval(intervalo);
-
-      });
+       });
     
     return (
-        <div>
+        <div className="product-details">
             Detalhes do Produto {id}
 
             <Grid container spacing={3}>
@@ -92,7 +93,17 @@ export default function DetalhesProduto() {
                 
 
                 <Grid item xs={5}>
-                Informações
+                    <div className="title">
+                        Tênis Nike
+                    </div>
+                    
+                    <div className="ref">
+                        Casual | Nike
+                    </div>
+                    
+                    <div className="reviews">
+                        Estrelas
+                    </div>
                 </Grid>
 
             </Grid>

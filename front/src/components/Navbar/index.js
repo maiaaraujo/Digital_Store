@@ -3,8 +3,8 @@ import { pink } from "@mui/material/colors";
 import Vector from "./Vector.png";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
-import "./styles.css";
 
+import "./styles.css";
 export default function Navbar() {
     return(
         <div className="navbar">
