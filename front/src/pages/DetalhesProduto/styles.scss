@@ -1,4 +1,17 @@
-.product-details .title {
-    font-weight: bold;
-    font-size: 2rem;
-}
+$color-yellow: #F6AA1C;
+
+.product-details {
+    .title {
+        font-weight: bold;
+        font-size: 2rem; /* 32px */
+    }
+    
+     .ref {
+        color: #666666;
+        font-size: 0.75rem;
+    }
+    
+     .reviews svg {
+        color: #F6AA1C;
+    }
+} 

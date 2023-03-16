@@ -8,7 +8,7 @@ import nike1 from "./img/nike1.jpg";
 
 
 import React, { useEffect } from "react";
-import { ChevronLeft, ChevronRight } from "@mui/icons-material";
+import { ChevronLeft, ChevronRight, Star, StarOutline } from "@mui/icons-material";
 
 import "./styles.scss";
 
@@ -102,7 +102,11 @@ export default function DetalhesProduto() {
                     </div>
                     
                     <div className="reviews">
-                        Estrelas
+                        <Star/>
+                        <Star/>
+                        <Star/>
+                        <Star/>
+                        <StarOutline/>
                     </div>
                 </Grid>
 
