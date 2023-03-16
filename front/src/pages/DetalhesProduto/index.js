@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import { Button, Card, Grid, Rating, Stack, } from "@mui/material";
+import Zoom from "react-img-zoom";
+import { Button, Card, Fab, Grid, Rating, Stack, } from "@mui/material";
 import adidas from "./img/adidas.png";
 import air from "./img/air.png";
 import Sneakers from "./img/Sneakers.png";
@@ -15,6 +16,7 @@ import "./styles.scss";
 export default function DetalhesProduto() {
     const {id} = useParams();
     const [atual, setAtual] = React.useState(0);
+    const [color, setColor] = React.useState(0);
 
     const imagens = [
         adidas,
@@ -29,15 +31,13 @@ export default function DetalhesProduto() {
 
         return imagens.map((cada, posicao) => {
             return (
-                
-                    <Grid item xs={2.4}>
+                <Grid item xs={2.4}>
                         <Card onClick={() => setAtual(posicao)} sx={(atual === posicao) && { 
                               border: "2px solid red"}}>
                             <img src={cada} width="100%"/>
                         </Card>
                     </Grid>
-                
-            );
+                 );
         });
     }
 
@@ -74,23 +74,24 @@ export default function DetalhesProduto() {
                         alignItems: "center"
                   }}> 
                         <ChevronLeft sx={{fontSize:"60px"}} onClick={() => anterior()}/>
+                        {imagens.map((img, key) => (
+                            <div hidden={key !== atual}>
+                                <Zoom width={400} height={400} zoomScale={2} img={img}/>
+                            </div>
+                        ))}  
                         <img width="400px" src={imagens[atual]}/>
+                        
                         <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
                     </Stack>
                    
                  </Card>
 
-
-                   <Grid container spacing={2}>
+            <Grid container spacing={2}>
                     
                         <Items/>
-
-
-                    </Grid>
+   </Grid>
                 
-                </Grid>
-
-                
+</Grid>
 
                 <Grid item xs={5}>
                     <div className="title">
@@ -118,8 +119,14 @@ export default function DetalhesProduto() {
                     </div>
 
                     <div>
-                        Cor
+                       <p>Cor <small>{color}</small></p>
+                       
+                       <Fab onClick={() => setColor('Azul')} color="primary"></Fab>
+                       <Fab onClick={() => setColor('Roxo')} color="secondary"></Fab>
+                       <Fab onClick={() => setColor('Verde')} color="success"></Fab>
+                       <Fab onClick={() => setColor('Vermelho')} color="error"></Fab>
                     </div>
+                    <br/>
 
                     <Button className="buy" variant="contained">COMPRAR</Button>
                 </Grid>
