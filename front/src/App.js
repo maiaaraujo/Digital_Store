@@ -1,36 +1,26 @@
-import React, { Component } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Carousel from "./components/Carousel";
-import Colecoes from "./components/Colecoes";
-import OfertaEspecial from "./components/OfertaEspecial"
-import Menu from "./components/Menu";
-import Navbar from "./components/Navbar";
-import Categorias from "./pages/Categorias";
-import MeusPedidos from "./pages/MeusPedidos";
-import Produtos from "./pages/Produtos";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-function Home() {
-  <p>Olá mundo!</p>
-}
+import Produtos from "./pages/Produtos";
+import Categorias from "./pages/Categorias";
+import Home from "./pages/Home";
+import MeusPedidos from "./pages/MeusPedidos";
+import DetalhesProduto from "./pages/DetalhesProduto";
+
+import "./index.css";
+
 
 export default function App() {
   return(
-    <>
+    <div>
       <BrowserRouter>
-      <Navbar/>
-      <Menu/>
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/produtos" element={<Produtos/>} />
-          <Route path="/categorias" element={<Categorias/>} />
-          <Route path="/meus-pedidos" element={<MeusPedidos/>} />
-           {/*na route a path e element são obrigatorios, a barra é a raiz do dominio  */}
-        </Routes>
+           <Route path="/" element= {<Home/>} />
+           <Route path="/produtos" element={<Produtos/>} />
+           <Route path="/categorias" element={<Categorias/>} />
+           <Route path="/meus-pedidos" element={<MeusPedidos/>} />
+           <Route path="/produtosx" element={<DetalhesProduto/>} />
+         </Routes>
       </BrowserRouter>
-
-      <Carousel/>
-      <Colecoes/>
-      <OfertaEspecial/>
-    </>
-  );
+    </div>
+  )
 }

@@ -1,9 +1,8 @@
-import React from "react";
+export default function MeusPedidos () {
+    return (
+        <div>
+            Página de Meus Pedidos
+        </div>
+    )
 
-export default function MeusPedidos() {
-    return(
-        <>
-            <h1>Página dos meus pedidos</h1>
-        </>
-    );
 }
