@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Button, Card, Grid, Stack, } from "@mui/material";
+import { Button, Card, Grid, Rating, Stack, } from "@mui/material";
 import adidas from "./img/adidas.png";
 import air from "./img/air.png";
 import Sneakers from "./img/Sneakers.png";
@@ -102,11 +102,7 @@ export default function DetalhesProduto() {
                     </div>
                     
                     <div className="reviews">
-                        <Star/>
-                        <Star/>
-                        <Star/>
-                        <Star/>
-                        <StarOutline/>
+                        <Rating value={3}></Rating>
                     </div>
 
                     <div>
