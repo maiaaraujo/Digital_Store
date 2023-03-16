@@ -76,10 +76,10 @@ export default function DetalhesProduto() {
                         <ChevronLeft sx={{fontSize:"60px"}} onClick={() => anterior()}/>
                         {imagens.map((img, key) => (
                             <div hidden={key !== atual}>
-                                <Zoom width={400} height={400} zoomScale={2} img={img}/>
+                                <Zoom width={900} height={400} zoomScale={2} img={img}/>
                             </div>
                         ))}  
-                        <img width="400px" src={imagens[atual]}/>
+                        
                         
                         <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
                     </Stack>
