@@ -9,7 +9,7 @@ import nike1 from "./img/nike1.jpg";
 
 
 import React, { useEffect } from "react";
-import { ChevronLeft, ChevronRight, Star, StarOutline } from "@mui/icons-material";
+import { ChevronLeft, ChevronRight, } from "@mui/icons-material";
 
 import "./styles.scss";
 
@@ -17,6 +17,7 @@ export default function DetalhesProduto() {
     const {id} = useParams();
     const [atual, setAtual] = React.useState(0);
     const [color, setColor] = React.useState(0);
+    const [listaBones, setListaBones] = React.useState([])
 
     const imagens = [
         adidas,
@@ -56,11 +57,24 @@ export default function DetalhesProduto() {
         }
     }
 
+    function buscarBones()
+    {
+        fetch("http://localhost:8000/bones")
+        .then(res => res.json())
+        .then(lista => (
+            setListaBones(lista)
+        ))
+    }
+
     React.useEffect(() => {
           let intervalo = setInterval(proximo, 3000);
 
           return () => clearInterval(intervalo);
        });
+
+    React.useEffect(() => {
+        buscarBones();
+    }, [])   
     
     return (
         <div className="product-details">
@@ -121,10 +135,14 @@ export default function DetalhesProduto() {
                     <div>
                        <p>Cor <small>{color}</small></p>
                        
-                       <Fab onClick={() => setColor('Azul')} color="primary"></Fab>
-                       <Fab onClick={() => setColor('Roxo')} color="secondary"></Fab>
-                       <Fab onClick={() => setColor('Verde')} color="success"></Fab>
-                       <Fab onClick={() => setColor('Vermelho')} color="error"></Fab>
+                       <Fab sx={{width: "35px", height: "20px"}} onClick={() => setColor('Azul')} 
+                        color="primary"></Fab>
+                       <Fab sx={{width: "35px", height: "20px"}} onClick={() => setColor('Roxo')} 
+                        color="secondary"></Fab>
+                       <Fab sx={{width: "35px", height: "20px"}} onClick={() => setColor('Verde')} 
+                        color="success"></Fab>
+                       <Fab sx={{width: "35px", height: "20px"}} onClick={() => setColor('Vermelho')} 
+                        color="error"></Fab>
                     </div>
                     <br/>
 

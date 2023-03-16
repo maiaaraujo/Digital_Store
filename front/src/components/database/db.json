@@ -1,0 +1,31 @@
+{
+    "bones":[
+        {
+            "azul": [
+                {
+                    "nome": "Nike",
+                    "preco": 299,
+                    "descricao": "algum texto aqui",
+                    "imagem": "https://img1.gratispng.com/20190205/azf/kisspng-chuck-taylor-all-stars- converse-chuck-taylor-all-s-5c59fd7d81cea2.4064393415494014695317.jpg"
+                }
+            ]
+        },
+        {
+            "vermelho": [
+                    {
+                        "nome": "Nike",
+                        "preco": 299,
+                        "descricao": "algum texto aqui",
+                        "imagem": ""
+                    }
+                
+            ]
+        },
+        {
+            "verde": []
+        },
+        {
+            "roxo": []
+        }
+    ]
+}
