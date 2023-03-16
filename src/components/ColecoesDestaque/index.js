@@ -1,74 +1,53 @@
-import './reset.css';
 import './style.css';
-import { Avatar, Grid } from '@mui/material';
+import { Avatar, Container, Grid } from '@mui/material';
 
-//importação das imgs
-import Supreme from "./img/Supreme.png";
-import Adidas from "./img/Adidas.png";
-import Fone from "./img/Fone.png";
-import blusa from "./img/blusa.png";
-import calça from "./img/calça.png";
-import head from "./img/head.png";
-import tenis from "./img/tenis.png";
-import KSwiss from "./img/KSwiss.png";
-import Line from "./img/Line.png";
+import blusa from "./img/blusa.svg";
+import fone from "./img/fone.svg";
+import tenis from "./img/tenis.svg";
+import calça from "./img/calça.svg";
+// import KSwiss from "./img/KSwiss.png";
+// import Line from "./img/Line.png";
 
 
-export default function ColecoesemDestaque(){
+export default function ColecoesDestaque (){
 
     const roupas = [
-        { nome: "blusa", img: blusa },
-        { nome: "calça", img: calça },
-        { nome: "calça", img: calca },
-        { nome: "head", img: head },
-        { nome: "tenis", img: tenis },
+        { nome: "Blusa", imagem: blusa },
+        { nome: "Calça", imagem: calça },
+        { nome: "Calça", imagem: calça },
+        { nome: "Fone", imagem: fone },
+        { nome: "Tênis", imagem: tenis },
     ];
 
     const Sections = () => {
-        return roupas.map((cada)) => {
+        return roupas.map((cada) => {
             return (
 
                 <Grid item>
-                    <Avatar sx={{bgcolor:"white", height:"104px", width: "104px"}}
+                    <Avatar sx={{bgcolor:"white", height:"104px", width: "104px"}}>
+                        <img src={cada.imagem}></img>
+                    </Avatar>
+                    <p>{cada.nome}</p>
                 </Grid>
-            )
-        }
+            );
+        });
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    return(
+    return (
         <>
-      
-        <h1>Coleções em destaque</h1>
+        <div className="bg">
+            <Container>
+                <h3>Coleções em destaque</h3>
+                <Grid container direction="row" justifyContent="center" alignItems="center" spacing={2}>
+                    <Sections/>
+                </Grid>
+            </Container>
+        </div>
+    </>
+    )
+}
 
-        <div className="row">
-            <div className="col">
-                <img id='blusa' src={blusa} alt=''/>
-                <p>Camisetas</p>
-            </div>
-            
-            <div className="col02">                
+            {/* <div className="col02">                
                 <img id='calça' src={calça} alt=''/>
                 <p>Calças</p>
             </div>
@@ -146,4 +125,4 @@ export default function ColecoesemDestaque(){
 
         </>
     )
-}
+} */};
