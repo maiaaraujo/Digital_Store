@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { Card, Grid, Stack, } from "@mui/material";
+import { Button, Card, Grid, Stack, } from "@mui/material";
 import adidas from "./img/adidas.png";
 import air from "./img/air.png";
 import Sneakers from "./img/Sneakers.png";
@@ -108,6 +108,24 @@ export default function DetalhesProduto() {
                         <Star/>
                         <StarOutline/>
                     </div>
+
+                    <div>
+                        R$299
+                    </div>
+
+                    <div>
+                        Descrição do produto
+                    </div>
+
+                    <div>
+                        Tamanho
+                    </div>
+
+                    <div>
+                        Cor
+                    </div>
+
+                    <Button className="buy" variant="contained">COMPRAR</Button>
                 </Grid>
 
             </Grid>

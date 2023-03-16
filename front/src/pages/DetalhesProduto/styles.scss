@@ -1,4 +1,5 @@
 $color-yellow: #F6AA1C;
+$color-gray: #666666;
 
 .product-details {
     .title {
@@ -7,11 +8,16 @@ $color-yellow: #F6AA1C;
     }
     
      .ref {
-        color: #666666;
+        color: $color-gray;
         font-size: 0.75rem;
     }
     
      .reviews svg {
-        color: #F6AA1C;
+        color: $color-yellow;
     }
+
+    .buy, .buy:hover {
+        background-color: $color-yellow;
+    }
+
 } 
