@@ -1,11 +1,7 @@
 import { useParams } from "react-router-dom";
 import Zoom from "react-img-zoom";
 import { Button, Card, Fab, Grid, Rating, Stack, } from "@mui/material";
-import adidas from "./img/adidas.png";
-import air from "./img/air.png";
 import Sneakers from "./img/Sneakers.png";
-import nike from "./img/nike.jpg";
-import nike1 from "./img/nike1.jpg";
 
 
 import React, { useEffect } from "react";
@@ -20,12 +16,13 @@ export default function DetalhesProduto() {
     const [listaBones, setListaBones] = React.useState([])
 
     const imagens = [
-        adidas,
         Sneakers,
-        air,
-        nike,
-        nike1,
+        Sneakers,
+        Sneakers,
+        Sneakers,
+        Sneakers,
     ];
+
 
     const Items = () => {
         
@@ -93,7 +90,6 @@ export default function DetalhesProduto() {
                                 <Zoom width={900} height={400} zoomScale={2} img={img}/>
                             </div>
                         ))}  
-                        
                         
                         <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
                     </Stack>

@@ -19,7 +19,7 @@ export default function Navbar() {
                 </Grid>
                
                 <Grid item>
-                <TextField className="input" color="secondary"
+                <TextField className="input"
                 InputProps={{
                 endAdornment: <InputAdornment position="end"><SearchIcon/></InputAdornment>,}} 
                         sx={{

@@ -29,10 +29,7 @@ export default function Home () {
       <div>
         <Navbar/>
         <Menu/> 
-          Página de Home 
-        
         <Carousel/>
-        
         <ColecoesDestaque/>
     
     <Container>
@@ -47,6 +44,10 @@ export default function Home () {
           <Produto/>
         </Grid>
         
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+
         <Grid item md={3}>
           <Produto/>
         </Grid>
