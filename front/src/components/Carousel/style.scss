@@ -4,10 +4,6 @@ $color-gray: #F5F5F5;
 $color-dark-gray: #474747;
 
 body {
-  background: red;
-  color: #000;
-  margin: 0;
-  padding: 0;
 }
 
 .swiper {
@@ -25,6 +21,9 @@ body {
   align-items: center;
 }
 
+.swiper-pagination-bullet-active {
+  background: $color-pink !important;
+}
 
 
 //minha tag pai
@@ -33,9 +32,12 @@ body {
   justify-content: center;
   /* My editions */
 
+  h1 {
+    font-size: 30px;
+  }
+
   .alinharTexto {
     text-align: left;
-    padding: 5px;
   }
 
   .buttonrosa {
@@ -64,23 +66,15 @@ body {
   }
 
   //IMAGENS
-
-  .imagens{
-    display: flex;
-    flex-direction: row;
-    align-items: start;
-  }
-
   .tenisWhite {
-    
+    margin-right: 100px;
+    width: 380px;
+    transform: rotate(-25deg);
   }
 
-  .Ornamento {
+  .ornamento {
+    margin-right: 10px;
   }
 
   //FIM IMAGENS
-
-  .swiper-pagination-bullet-active {
-    background: $color-pink !important;
-  }
 }

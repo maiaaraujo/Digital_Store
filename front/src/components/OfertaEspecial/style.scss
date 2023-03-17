@@ -1,6 +1,11 @@
 .OferEsp {
   display: flex;
   justify-content: center;
+  padding: 0;
+
+  h1 {
+    font-size: 30px;
+  }
   
   .OFmargem {
     margin: 30px;

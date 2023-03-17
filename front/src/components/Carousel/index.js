@@ -33,64 +33,68 @@ export default function Carousel() {
                                         <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
                                         <Button type="button" className="buttonrosa">Ver Ofertas</Button>
                                    </div>
-                                        <div className="tenisWhite">
-                                             <img src={companyLogo} alt="tenis branco" />
-                                        </div>
-                                        <div className="Ornamento">
-                                             <img src={ornament} alt="icone" />
-                                        </div>
-
+                                   <div>
+                                        <img src={companyLogo} className="tenisWhite" alt="tenis branco" />
+                                   </div>
+                                   <div>
+                                        <img src={ornament} className="ornamento" alt="icone" />
+                                   </div>
                               </section>
                          </Container>
-
                     </SwiperSlide>
                     <SwiperSlide>
-                         <section className="d-flex justify-content-evenly align-items-center">
-                              <div className="text-start justify-content-end p-5">
-                                   <p className="fs-6 textoAmarelo">Melhores ofertas personalizadas</p>
-                                   <h1><strong>Queima de <br />Estoque Nike</strong></h1>
-                                   <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
-                                   <button type="button" className="buttonrosa">Ver Ofertas</button>
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="swiper-slide img " src={companyLogo} alt="tenis branco" />
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="minhaimg" src={ornament} alt="icone" />
-                              </div>
-                         </section>
+                         <Container>
+                              <section className="Carousel">
+                                   <div className="alinharTexto">
+                                        <p className="textoAmarelo">Melhores ofertas personalizadas</p>
+                                        <h1><strong>Queima de <br />Estoque Nike</strong></h1>
+                                        <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
+                                        <Button type="button" className="buttonrosa">Ver Ofertas</Button>
+                                   </div>
+                                   <div>
+                                        <img src={companyLogo} className="tenisWhite" alt="tenis branco" />
+                                   </div>
+                                   <div>
+                                        <img src={ornament} className="ornamento" alt="icone" />
+                                   </div>
+                              </section>
+                         </Container>
                     </SwiperSlide>
                     <SwiperSlide>
-                         <section className="d-flex justify-content-evenly align-items-center">
-                              <div className="text-start justify-content-end p-5">
-                                   <p className="fs-6 textoAmarelo">Melhores ofertas personalizadas</p>
-                                   <h1><strong>Queima de <br />Estoque Nike</strong></h1>
-                                   <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
-                                   <button type="button" className="buttonrosa">Ver Ofertas</button>
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="swiper-slide img " src={companyLogo} alt="tenis branco" />
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="minhaimg" src={ornament} alt="icone" />
-                              </div>
-                         </section>
+                         <Container>
+                              <section className="Carousel">
+                                   <div className="alinharTexto">
+                                        <p className="textoAmarelo">Melhores ofertas personalizadas</p>
+                                        <h1><strong>Queima de <br />Estoque Nike</strong></h1>
+                                        <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
+                                        <Button type="button" className="buttonrosa">Ver Ofertas</Button>
+                                   </div>
+                                   <div>
+                                        <img src={companyLogo} className="tenisWhite" alt="tenis branco" />
+                                   </div>
+                                   <div>
+                                        <img src={ornament} className="ornamento" alt="icone" />
+                                   </div>
+                              </section>
+                         </Container>
                     </SwiperSlide>
                     <SwiperSlide>
-                         <section className="d-flex justify-content-evenly align-items-center">
-                              <div className="text-start justify-content-end p-5">
-                                   <p className="fs-6 textoAmarelo">Melhores ofertas personalizadas</p>
-                                   <h1><strong>Queima de <br />Estoque Nike</strong></h1>
-                                   <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
-                                   <button type="button" className="buttonrosa">Ver Ofertas</button>
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="swiper-slide img " src={companyLogo} alt="tenis branco" />
-                              </div>
-                              <div className="align-self-start">
-                                   <img className="minhaimg" src={ornament} alt="icone" />
-                              </div>
-                         </section>
+                         <Container>
+                              <section className="Carousel">
+                                   <div className="alinharTexto">
+                                        <p className="textoAmarelo">Melhores ofertas personalizadas</p>
+                                        <h1><strong>Queima de <br />Estoque Nike</strong></h1>
+                                        <p className="terceiroTexto">Lorem ipsum dolor sit amet. In similique quia aut adipisci voluptates non quibusdam voluptas sit quaerat velit. </p>
+                                        <Button type="button" className="buttonrosa">Ver Ofertas</Button>
+                                   </div>
+                                   <div>
+                                        <img src={companyLogo} className="tenisWhite" alt="tenis branco" />
+                                   </div>
+                                   <div>
+                                        <img src={ornament} className="ornamento" alt="icone" />
+                                   </div>
+                              </section>
+                         </Container>
                     </SwiperSlide>
                </Swiper>
           </>
