@@ -1,19 +1,24 @@
 {
-  "posts": [
+  "produtos": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "nome": "K-Swiss V8 - Masculino",
+      "preco": 100
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "nome": "K-Swiss V8 - Masculino",
+      "preco": 100
+    },
+    {
+      "id": 3,
+      "nome": "K-Swiss V8 - Masculino",
+      "preco": 100
+    },
+    {
+      "id": 4,
+      "nome": "K-Swiss V8 - Masculino",
+      "preco": 100
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

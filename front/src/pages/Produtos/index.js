@@ -6,6 +6,7 @@ import "./styles.css";
 
 function CadaProduto (props) {
     const [quantidade, alterarQuantidade] = React.useState(1);
+    
 
     const add = () => { 
        alterarQuantidade(quantidade + 1);
@@ -34,35 +35,29 @@ function CadaProduto (props) {
 }
 
 export default function Produtos () {
-    
+    const [lista, setLista] = React.useState([]);
+   
+    React.useEffect(() => {
+        fetch('http://localhost:8000/produtos')
+           .then(res => res.json())
+           .then(dados => setLista(dados));
+     }, [])
 
     return (
         <div>
             <Menu/>
             Página de Produtos
-
             <hr/>
 
             <Grid container spacing={4}>
-                <Grid item>
-                    <CadaProduto produto="Pratinho" valor="8.90"/>
-                </Grid>
-
-                <Grid item>
-                    <CadaProduto produto="Heineken" valor="10"/>
-                </Grid>
-
-                <Grid item>
-                    <CadaProduto produto="Coca-cola" valor="5"/>
-                </Grid>
-
-                <Grid item>
-                    <CadaProduto produto="Fanta" valor="5"/>
-                </Grid>
-           </Grid>
-
-        
-</div>
+                {lista.map(cada => {
+                    return (
+                        <Grid item>
+                           <CadaProduto produto={cada.nome} valor={cada.preco}/>
+                        </Grid>
+                    )
+                })}
+            </Grid>        
+       </div>
   )
-
 }
