@@ -3,7 +3,6 @@ import Zoom from "react-img-zoom";
 import { Button, Card, Fab, Grid, Rating, Stack, } from "@mui/material";
 import Sneakers from "./img/Sneakers.png";
 
-
 import React, { useEffect } from "react";
 import { ChevronLeft, ChevronRight, } from "@mui/icons-material";
 
@@ -78,25 +77,27 @@ export default function DetalhesProduto() {
             Detalhes do Produto {id}
 
             <Grid container spacing={3}>
-                <Grid item xs={7}>
-                 <Card align="center">
-                    <Stack direction="row" sx={{
-                        justifyContent: "space-between",
+                <Grid item xs={6}>
+                 <Card align="center" display="flex" flex-direction="row">
+                 <ChevronLeft sx={{fontSize:"60px"}} onClick={() => anterior()}/>
+                    <Stack
+                        direction="row"
+                        sx={{
                         alignItems: "center"
-                  }}> 
-                        <ChevronLeft sx={{fontSize:"60px"}} onClick={() => anterior()}/>
+                        }}
+                    >
                         {imagens.map((img, key) => (
                             <div hidden={key !== atual}>
-                                <Zoom width={900} height={400} zoomScale={2} img={img}/>
+                                <Zoom width={100} height={400} zoomScale={2} img={img}/>
                             </div>
                         ))}  
                         
-                        <ChevronRight sx={{fontSize:"60px"}} onClick={proximo}/>
                     </Stack>
+                    <ChevronRight sx={{fontSize:"60px"}} onClick={() => proximo()}/>
                    
                  </Card>
 
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                     
                         <Items/>
    </Grid>
