@@ -9,6 +9,7 @@ import { Container } from "@mui/material";
 import Footer from "../../components/Footer";
 
 
+
 export default function Home () {
     
     // const [listaProdutos, setListaProdutos] = React.useState ([]);
@@ -35,7 +36,6 @@ export default function Home () {
     <Container>
     <Grid container spacing={3}>
         
-        
         <Grid item md={3}>
           <Produto/>
         </Grid>
@@ -54,10 +54,8 @@ export default function Home () {
     </Grid>
     </Container>
     
-    <Footer/>
- </div>    
-            
-        
-    )
+    <Footer/> 
+</div>    
+     )
 
 }
