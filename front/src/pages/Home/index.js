@@ -1,16 +1,13 @@
 import React from "react";
-import Menu from "../../components/Menu";
-import Navbar from "../../components/Navbar";
 import Carousel from "../../components/Carousel";
-import ColecoesDestaque from "../../components/ColecoesDestaque";
-import Produto from "../../components/Produto";
+import OfertaEspecial from "../../components/OfertaEspecial";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
-import Footer from "../../components/Footer";
+
 
 
 export default function Home () {
-    
+        
     // const [listaProdutos, setListaProdutos] = React.useState ([]);
 
     // React.useEffect(() => {
@@ -27,14 +24,11 @@ export default function Home () {
 
     return (
       <div>
-        
+        <Carousel/>
     
     <Container>
-    <Navbar/>
-        <Menu/> 
-        <Carousel/>
-        <ColecoesDestaque/>
-        <Footer/>
+      
+      <OfertaEspecial/>
     </Container>
     
     

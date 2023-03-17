@@ -1,5 +1,8 @@
-
-.OFmargem {
+.OferEsp {
+  display: flex;
+  justify-content: center;
+  
+  .OFmargem {
     margin: 30px;
 }
 
@@ -51,4 +54,6 @@
     left: 0px;
     width: 450px;
   }
+}
+
 
