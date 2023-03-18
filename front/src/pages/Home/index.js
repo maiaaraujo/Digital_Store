@@ -6,6 +6,7 @@ import ColecoesDestaque from "../../components/ColecoesDestaque";
 import Produto from "../../components/Produto";
 import { Grid } from "@mui/material";
 import { Container } from "@mui/material";
+import OfertaEspecial from "../../components/OfertaEspecial";
 import Footer from "../../components/Footer";
 
 
@@ -32,6 +33,7 @@ export default function Home () {
         <Menu/> 
         <Carousel/>
         <ColecoesDestaque/>
+        
     
     <Container>
     <Grid container spacing={3}>
@@ -52,8 +54,27 @@ export default function Home () {
           <Produto/>
         </Grid>
     </Grid>
+    <Grid container spacing={3}>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+       
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+    </Grid>
     </Container>
     
+    <OfertaEspecial/>
     <Footer/> 
 </div>    
      )

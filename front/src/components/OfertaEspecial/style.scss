@@ -1,0 +1,63 @@
+.OferEsp {
+  display: flex;
+  justify-content: center;
+
+  h1 {
+    font-size: 30px;
+  }
+  
+  .OFmargem {
+    margin: 30px;
+}
+
+.OFalinharItens {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 15em 0 50px;
+}
+
+.OFcorRosa {
+    color: #C92071;
+}
+
+.OFtextoPequeno {
+    color: #474747;
+    font-size: 12px;
+}
+
+.OFbuttonRosa {
+    margin-right: 60%;
+    margin-top: 30px;
+    font-size: 0.7em;
+    font-weight: bolder; 
+    background-color: #C92071;
+    border-radius: 5px;
+    padding: 10px 0;
+    border: none;
+    color: #ffffff;
+  }
+
+  /* sobreposição das imagens */
+
+  .OFsobreporImg {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 50px;
+  }
+
+  .OFedicaotenis01 {
+    position: absolute;
+    width: 40%;
+  }
+
+  .OFedicaoelipse {
+    position: relative;
+    top: 50px; 
+    left: 0px;
+    width: 450px;
+  }
+}
+
+

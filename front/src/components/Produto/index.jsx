@@ -10,9 +10,11 @@ export default function Produto()
           <Paper elevation={2}>
               <img src={sapato}/>
           </Paper>
-          <span>Categoria</span>
-          <h4>Nome do Produto</h4>
+          <div>
+                        Tenis
+         </div>
+          <span>K-Swiss V8 - Masculino</span>
+          <h4>$100</h4>
           </Stack>
-        </>
-    )
+        </>    )
 }

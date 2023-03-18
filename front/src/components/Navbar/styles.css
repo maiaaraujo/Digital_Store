@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Tilt+Neon&family=VT323&display=swap');
 
-
+.navbar{
+    margin-left: 30px;
+}
 .logo {
     font-weight: bold;
     margin-left: 13px;
@@ -24,7 +26,7 @@
 
 .navbar .input {
     left: 20px;
-    width: 450px;
+    width: 500px;
     top: 20%;
     color: #edede9;
 }
@@ -35,14 +37,14 @@
     color: #edede9;
     width: 150px;
     height: 50px;
-    left: 90%;
+    left: 60%;
     top: 20%;
 }
 
 .navbar .botao1 {
     width: 150px;
     height: 50px;
-    left: 65%;
+    left: 30%;
     top: 20%;
     color: #474747;
 }
