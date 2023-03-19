@@ -1,0 +1,37 @@
+$color-gray: #F5F5F5;
+$color-pink: #C92071;
+
+
+
+.segura {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-top: 50px;
+
+.fundo {
+    display: flex;
+    background-color: #D8E3F2;
+    border-radius: 5px;
+    box-shadow: 2px 2px #F5F5F5;
+}
+
+.alinharItens{
+    padding-left: 10px;
+}
+
+.buttonRosa {
+    background-color: white;
+    color: #C92071; 
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 140px;
+    height: 42px; 
+}
+
+.buttonRosa:hover {
+    background-color: $color-gray;
+    color: #C92071;
+}
+
+}
