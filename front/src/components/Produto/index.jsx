@@ -1,20 +1,23 @@
-import { Paper, Stack } from '@mui/material';
-import React from 'react';
+import { Paper, Stack, Chip, Grid } from "@mui/material";
+import React from "react";
 import sapato from './sapato.png';
 
-export default function Produto()
+
+
+export default function Produto ()
 {
-    return(
-        <>
-          <Stack>
-          <Paper elevation={2}>
-              <img src={sapato}/>
-          </Paper>
-          <div>
-                        Tenis
-         </div>
-          <span>K-Swiss V8 - Masculino</span>
-          <h4>$100</h4>
-          </Stack>
-        </>    )
+    return (
+    <>
+    <Stack>
+        <Paper elevation={2}>
+            <img src={sapato} alt='sapato.png'/>
+        </Paper>
+
+        <h6>Tênis</h6>
+        <span>K-Swiss V8 - Masculino</span>
+        <div className="price"> <h4>$200</h4> <b>$100</b> </div>
+
+    </Stack>
+     </>
+    );
 }

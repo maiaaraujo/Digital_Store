@@ -1,9 +1,14 @@
+import Navbar from "../../components/Navbar";
+import Menu from "../../components/Menu";
+
 import React from 'react';
 import "./style.css";
 
 export default function Checkbox() {
   return (
     <body className='checkbox-body'>
+        <Navbar/>
+        <Menu/>
     <div className='custom-checkbox'>
         <div>
         <p><strong>Filtrar por</strong></p>
