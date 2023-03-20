@@ -2,8 +2,6 @@ import { Paper, Stack, Chip, Grid } from "@mui/material";
 import React from "react";
 import sapato from './sapato.png';
 
-
-
 export default function Produto ()
 {
     return (
