@@ -15,7 +15,7 @@ export default function OfertaEspecial() {
                 </div>
 
                 <div className="OFalinharItens">
-                    <p className="OFcorRosa">Oferta Especial</p>
+                    <p className="OFcorRosa"><strong>Oferta Especial</strong></p>
                     <h1>Air Jordan edição de colecionador</h1>
                     <p className="OFtextoPequeno"> lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsumlorem ipsumlorem ipsumvvlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</p>
                     <Button variant="contained" className='OFbuttonRosa'> Ver Oferta</Button>
