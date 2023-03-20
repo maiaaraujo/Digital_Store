@@ -3,8 +3,9 @@
     color: black;
     margin: 10px;
     margin-bottom: 10px;
-    margin-right: 65em;
+    margin-left: 10px;
     padding: 60px;
+    
 }
 
 .custom-checkbox input + label:before {
@@ -18,7 +19,7 @@
     vertical-align: middle;
     margin-right: 8px;
     margin-bottom: 3px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 
@@ -60,3 +61,8 @@
     margin-right: 8px;
     margin-bottom: 3px;
   }
+
+ .sapatos {
+    margin-left: 150px;
+    top: 30px;
+ }

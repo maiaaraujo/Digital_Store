@@ -94,6 +94,45 @@ export default function Checkbox() {
   </div>
   </Container> 
 
+  <Container className='sapatos'>
+    <Grid container spacing={1}>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+       
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+    </Grid>
+    <Grid container spacing={2}>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+       
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+        
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+
+        <Grid item md={3}>
+          <Produto/>
+        </Grid>
+    </Grid>
+    </Container>
+
       <Footer/>
       </body>
     );
